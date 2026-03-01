@@ -7,9 +7,6 @@ public class User {
     private Cart cart;
 
 
-    
-
-
     public User(String userId, String userName, String emailId) {
         this.userId = userId;
         this.userName = userName;

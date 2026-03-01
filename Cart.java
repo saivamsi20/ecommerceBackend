@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-    private List<product> items;
+    private List<Product> items;
 
     public Cart() {
         this.items = new ArrayList<>();
@@ -12,7 +12,7 @@ public class Cart {
 
 
 
-    public void additems(product pro){
+    public void additems(Product pro){
         items.add(pro);
         System.out.println("product added to cart..!");
     }
@@ -22,7 +22,7 @@ public class Cart {
             System.out.println("cart is empty :(");
             return;
         }
-        for(product pro : items){
+        for(Product pro : items){
             System.out.println("-- " + pro.getName() + "(₹ " + pro.getPrice() + " ) --");
         }
         
